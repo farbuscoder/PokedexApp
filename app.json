@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "PokedexApp",
-    "slug": "PokedexApp",
+    "name": "Pokedex App",
+    "slug": "pokedex-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bfddd564-f2ff-4efd-8144-9117c35408b2"
+      }
+    },
+    "owner": "marcosfer243"
   }
 }
