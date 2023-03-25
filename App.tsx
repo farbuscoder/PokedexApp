@@ -1,20 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {  Text,  SafeAreaView, useColorScheme } from 'react-native';
+import { Provider } from 'react-redux';
+import {store} from "./src/app/store";
+import Counter from './src/components/Counter';
+import ButtonRedux from './src/components/ButtonRedux';
 
 export default function App() {
+  const isDarkMode = useColorScheme()==='dark';
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+    <SafeAreaView>
+      <Counter/>
+      <ButtonRedux/>
+    </SafeAreaView>
+    </Provider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
