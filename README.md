@@ -1,4 +1,4 @@
-# PokedexApp-Typescript
+# React-Native-Typescript
 
 React native app using Expo and Typescript.
 
